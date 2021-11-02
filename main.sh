@@ -17,3 +17,9 @@ cp Brewfile ~/Brewfile
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew update
 brew bundle --global
+
+# Node.js（LTS）のインストール
+n lts
+
+# Node.js及びグローバル用NPMパッケージのインストール
+npm install -g @angular/cli git-diff-archive npm-check-update yarn
