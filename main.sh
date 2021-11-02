@@ -5,3 +5,6 @@ mkdir ~/materials
 mkdir ~/repos
 mkdir ~/repos/git
 mkdir ~/repos/unity
+
+#Vim設定ファイルの配置
+cp .vimrc ~/.vimrc
