@@ -1,6 +1,7 @@
 brew "elixir"
 brew "fish"
 brew "git"
+brew "kubectl"
 brew "n"
 brew "nginx"
 brew "plantuml"
