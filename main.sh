@@ -19,6 +19,7 @@ brew update
 brew bundle --global
 
 # Node.js（LTS）のインストール
+sudo mkdir -p /usr/local/n && sudo chown -R $(whoami) /usr/local/n/
 n lts
 
 # Node.js及びグローバル用NPMパッケージのインストール
