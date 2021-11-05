@@ -8,6 +8,7 @@ mkdir ~/repos/unity
 
 # Vim設定ファイルの配置
 cp .vimrc ~/.vimrc
+cp .ideavimrc ~/.ideavimrc
 
 # vim-plugのインストール
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
