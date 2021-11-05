@@ -1,3 +1,5 @@
+tap "homebrew/cask-fonts"
+
 brew "elixir"
 brew "fish"
 brew "git"
@@ -23,6 +25,7 @@ cask "fl-studio"
 cask "google-chrome"
 cask "ilok-license-manager"
 cask "imageoptim"
+cask "font-jetbrains-mono"
 cask "jetbrains-toolbox"
 cask "keyboard-maestro"
 cask "license-control-center"
