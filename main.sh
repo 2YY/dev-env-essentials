@@ -24,6 +24,3 @@ n lts
 
 # Node.js及びグローバル用NPMパッケージのインストール
 npm install -g @angular/cli git-diff-archive npm-check-update yarn
-
-# Xcode CLI のインストール
-xcode-select --install
