@@ -13,7 +13,7 @@ cp .vimrc ~/.vimrc
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 # Homebrew及びそのパッケージのインストール
-cp Brewfile ~/Brewfile
+cp .Brewfile ~/.Brewfile
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew update
 brew bundle --global
