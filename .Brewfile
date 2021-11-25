@@ -1,5 +1,6 @@
 tap "homebrew/cask-fonts"
 
+brew "awscli"
 brew "elixir"
 brew "fish"
 brew "git"
