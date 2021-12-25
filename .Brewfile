@@ -1,10 +1,10 @@
 tap "homebrew/cask-fonts"
 
 brew "awscli"
-brew "elixir"
 brew "fish"
 brew "git"
 brew "gradle"
+brew "kerl"
 brew "kubectl"
 brew "minikube"
 brew "n"
