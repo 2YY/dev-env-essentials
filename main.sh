@@ -6,6 +6,9 @@ mkdir ~/repos
 mkdir ~/repos/git
 mkdir ~/repos/unity
 
+# fish設定ファイルの追加
+cp config.fish ~/.config/fish/config.fish
+
 # Vim設定ファイルの配置
 cp .vimrc ~/.vimrc
 cp .ideavimrc ~/.ideavimrc
