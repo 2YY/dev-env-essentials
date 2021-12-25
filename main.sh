@@ -24,4 +24,4 @@ sudo mkdir -p /usr/local/n && sudo chown -R $(whoami) /usr/local/n/
 n lts
 
 # Node.js及びグローバル用NPMパッケージのインストール
-npm install -g @angular/cli git-diff-archive npm-check-update yarn
+npm install -g @angular/cli git-diff-archive http-server npm-check-update yarn
