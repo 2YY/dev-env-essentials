@@ -19,6 +19,9 @@ cp .Brewfile ~/.Brewfile
 brew update
 brew bundle --global
 
+# kiexのインストール
+\curl -sSL https://raw.githubusercontent.com/taylor/kiex/master/install | bash -s
+
 # Node.js（LTS）のインストール
 sudo mkdir -p /usr/local/n && sudo chown -R $(whoami) /usr/local/n/
 n lts
