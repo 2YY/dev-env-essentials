@@ -1,6 +1,7 @@
 tap "homebrew/cask-fonts"
 
 brew "awscli"
+brew "ffmpeg"
 brew "fish"
 brew "git"
 brew "gradle"
