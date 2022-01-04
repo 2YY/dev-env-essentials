@@ -70,5 +70,5 @@ omap z <Plug>(easymotion-s2)
 map <C-j> <Plug>(edgemotion-j)
 map <C-k> <Plug>(edgemotion-k)
 
-:command Ne NERDTree
-:command Nef NERDTreeFocus
+:command Ner NERDTree
+:command Nerf NERDTreeFocus
