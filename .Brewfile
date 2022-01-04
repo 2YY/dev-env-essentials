@@ -11,6 +11,7 @@ brew "n"
 brew "plantuml"
 brew "podman"
 brew "tree"
+brew "unar"
 
 cask "1password"
 cask "affinity-designer"
