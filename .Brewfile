@@ -1,6 +1,7 @@
 tap "homebrew/cask-fonts"
 
 brew "awscli"
+brew "cmake"
 brew "ffmpeg"
 brew "fish"
 brew "git"
