@@ -1,0 +1,13 @@
+font:
+  normal:
+    family: JetBrainsMonoMedium Nerd Font
+  bold:
+    family: JetBrainsMonoMedium Nerd Font
+    style: Bold
+  italic:
+    family: JetBrainsMonoMedium Nerd Font
+    style: Bold
+  size: 14
+  offset:
+    x: 0
+    y: 6
