@@ -6,8 +6,16 @@ mkdir ~/repos
 mkdir ~/repos/git
 mkdir ~/repos/unity
 
+# Alacritty設定ファイルの追加
+mkdir ~/.config
+mkdir ~/.config/alacritty
+cp alacritty.yml ~/.config/alacritty/alacritty.yml
+
 # fish設定ファイルの追加
 cp config.fish ~/.config/fish/config.fish
+
+# tmux設定ファイルの追加
+cp .tmux.conf ~/.tmux.conf
 
 # Vim設定ファイルの配置
 cp .vimrc ~/.vimrc
