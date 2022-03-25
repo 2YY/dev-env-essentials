@@ -8,6 +8,8 @@ Plug 'easymotion/vim-easymotion'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'haya14busa/vim-edgemotion'
 Plug 'inkarkat/vim-ReplaceWithRegister'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 Plug 'kana/vim-textobj-entire'
 Plug 'kana/vim-textobj-user'
 Plug 'leafgarland/typescript-vim'
