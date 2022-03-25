@@ -14,7 +14,7 @@ brew "nkf"
 brew "n"
 brew "plantuml"
 brew "podman"
-brew "tmax"
+brew "tmux"
 brew "tree"
 brew "unar"
 
