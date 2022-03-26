@@ -14,6 +14,9 @@ cp alacritty.yml ~/.config/alacritty/alacritty.yml
 # fish設定ファイルの追加
 cp config.fish ~/.config/fish/config.fish
 
+# starship設定ファイルの追加
+cp starship.toml ~/.config/starship.toml
+
 # tmux設定ファイルの追加
 cp .tmux.conf ~/.tmux.conf
 
