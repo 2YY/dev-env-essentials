@@ -2,7 +2,6 @@ filetype off
 filetype plugin indent off
 
 call plug#begin('~/.vim/plugged')
-Plug 'airblade/vim-gitgutter'
 Plug 'dbakker/vim-paragraph-motion'
 Plug 'easymotion/vim-easymotion'
 Plug 'editorconfig/editorconfig-vim'
@@ -12,25 +11,21 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'kana/vim-textobj-entire'
 Plug 'kana/vim-textobj-user'
-Plug 'leafgarland/typescript-vim'
 Plug 'machakann/vim-highlightedyank'
 Plug 'mattn/emmet-vim'
+Plug 'mattn/vim-lsp-settings'
+Plug 'prabirshrestha/asyncomplete.vim'
+Plug 'prabirshrestha/asyncomplete-lsp.vim'
+Plug 'prabirshrestha/vim-lsp'
 Plug 'preservim/nerdtree'
 Plug 'prettier/vim-prettier'
-Plug 'Quramy/tsuquyomi'
-Plug 'Quramy/vim-js-pretty-template'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'tommcdo/vim-exchange'
 Plug 'tpope/vim-commentary'
-Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'vim-scripts/argtextobj.vim'
 Plug 'vim-scripts/vim-auto-save'
 Plug 'git://git.wincent.com/command-t.git'
-Plug 'elixir-editors/vim-elixir'
-Plug 'jason0x43/vim-js-indent'
-Plug 'mhartington/vim-typings'
-Plug 'Quramy/vim-dtsm'
 call plug#end()
 
 set clipboard=unnamedplus
