@@ -70,3 +70,5 @@ map <C-k> <Plug>(edgemotion-k)
 :command Ner NERDTree
 :command Nerf NERDTreeFocus
 :command Nert NERDTreeToggle
+
+noremap <C-l> :LspPeekDefinition
