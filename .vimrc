@@ -13,10 +13,7 @@ Plug 'kana/vim-textobj-entire'
 Plug 'kana/vim-textobj-user'
 Plug 'machakann/vim-highlightedyank'
 Plug 'mattn/emmet-vim'
-Plug 'mattn/vim-lsp-settings'
-Plug 'prabirshrestha/asyncomplete.vim'
-Plug 'prabirshrestha/asyncomplete-lsp.vim'
-Plug 'prabirshrestha/vim-lsp'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'preservim/nerdtree'
 Plug 'prettier/vim-prettier'
 Plug 'terryma/vim-multiple-cursors'
@@ -70,5 +67,3 @@ map <C-k> <Plug>(edgemotion-k)
 :command Ner NERDTree
 :command Nerf NERDTreeFocus
 :command Nert NERDTreeToggle
-
-noremap <C-l> :LspPeekDefinition
