@@ -8,7 +8,8 @@
 1. `cd このリポジトリのルートディレクトリ`
 2. `sh main.sh`
 3. vim を起動して `:PlugInstall` を実行
-4. [Nerd Font Download Page](https://www.nerdfonts.com/font-downloads) から JetBrains Mono の Nerd Font 版をダウンロード・インストール
+4. Vim を起動して `:CocInstall coc-json coc-tsserver coc-clangd coc-elixir` を実行
+5. [Nerd Font Download Page](https://www.nerdfonts.com/font-downloads) から JetBrains Mono の Nerd Font 版をダウンロード・インストール
 
 ## 備考
 
