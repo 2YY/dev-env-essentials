@@ -11,6 +11,9 @@ mkdir ~/.config
 mkdir ~/.config/alacritty
 cp alacritty.yml ~/.config/alacritty/alacritty.yml
 
+mkdir ~/.vim
+cp coc-settings.json ~/.vim/coc-settings.json
+
 # fish設定ファイルの追加
 cp config.fish ~/.config/fish/config.fish
 
