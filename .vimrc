@@ -63,6 +63,7 @@ xmap s <Plug>(easymotion-s2)
 omap z <Plug>(easymotion-s2)
 map <C-j> <Plug>(edgemotion-j)
 map <C-k> <Plug>(edgemotion-k)
+nmap <leader>rn <Plug>(coc-rename)
 
 :command Ner NERDTree
 :command Nerf NERDTreeFocus
