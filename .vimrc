@@ -28,7 +28,7 @@ call plug#end()
 set clipboard=unnamedplus
 set number
 set mouse=a
-set foldmethod=syntax
+set foldmethod=indent
 set background=dark
 set shiftwidth=2
 set autoindent
