@@ -29,6 +29,8 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 # Vim設定ファイルの配置
 cp .vimrc ~/.vimrc
 cp .ideavimrc ~/.ideavimrc
+mkdir -p ~/.config/nvim
+ln -s ~/.vimrc ~/.config/nvim/init.vim
 
 # vim-plugのインストール
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
