@@ -18,6 +18,7 @@ Plug 'lambdalisue/nerdfont.vim'
 Plug 'machakann/vim-highlightedyank'
 Plug 'mattn/emmet-vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'prettier/vim-prettier'
 Plug 'tommcdo/vim-exchange'
 Plug 'tpope/vim-commentary'
