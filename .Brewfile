@@ -23,6 +23,7 @@ brew "unar"
 brew "volta"
 
 cask "1password"
+cask "audio-hijack"
 cask "affinity-designer"
 cask "affinity-photo"
 cask "alacritty"
