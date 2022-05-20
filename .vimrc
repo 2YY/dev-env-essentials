@@ -229,7 +229,7 @@ nnoremap <silent> [fzf-p]o :<C-u>CocCommand fzf-preview.ProjectFiles<CR>
 nnoremap <silent> [fzf-p]e :<C-u>CocCommand fzf-preview.ProjectMruFiles<CR>
 
 " NOTE: <Leader> + ff で文字列検索する。(プロジェクトの全ファイルが対象)
-nnoremap <silent> [fzf-p]f :<C-u>CocCommand fzf-preview.ProjectGrep
+nnoremap <silent> [fzf-p]f :<C-u>CocCommand fzf-preview.ProjectGrep<Space>
 
 " NOTE: <Leader> + fF で直前の文字列検索を再実行する。(プロジェクトの全ファイルが対象)
 nnoremap <silent> [fzf-p]<S-f> :<C-u>CocCommand fzf-preview.ProjectGrepRecall<CR>
@@ -243,4 +243,3 @@ nnoremap <silent> s0 :<C-u>CocCommand fzf-preview.GitActions<CR>
 " nmap <Leader>rn <Plug>(coc-rename)
 " nmap <silent> gd <Plug>(coc-definition)
 " nmap <silent> gr <Plug>(coc-references)
-
