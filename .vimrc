@@ -81,7 +81,7 @@ let g:fern#renderer = 'nerdfont'
 " NOTE: Fern のデフォルトキーバインディングを無効化する。
 let g:fern#disable_default_mappings = 1
 
-" Fern バッファのカスタマイズ
+" NOTE: Fern バッファのカスタマイズ
 function! s:init_fern() abort
   " NOTE: Fern のキーバインディングを設定する。(s1 で開閉出来なくなるので s を空けている以外はデフォルトのまま)
   noremap <buffer> <C-C>                              <Plug>(fern-action-cancel)
