@@ -21,12 +21,6 @@ cp config.fish ~/.config/fish/config.fish
 # starship設定ファイルの追加
 cp starship.toml ~/.config/starship.toml
 
-# tmux設定ファイルの追加
-cp .tmux.conf ~/.tmux.conf
-
-# Tmux Plugin Manager のインストール
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-
 # Vim設定ファイルの配置
 cp .vimrc ~/.vimrc
 cp .ideavimrc ~/.ideavimrc
