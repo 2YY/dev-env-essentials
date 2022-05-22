@@ -69,6 +69,35 @@ let g:auto_save_in_insert_mode = 0
 let g:auto_save_silent = 1
 let g:auto_save = 1
 
+" NOTE: :Tk で、ターミナルバッファを上に開く。
+command! -nargs=* Tk split | wincmd k | terminal <args>
+
+" NOTE: :Tj で、ターミナルバッファを下に開く。
+command! -nargs=* Tj split | wincmd j | terminal <args>
+
+" NOTE: :Th で、ターミナルバッファを左のウィンドウに開く。
+command! -nargs=* Th vsplit | terminal <args>
+
+" NOTE: :Tl で、ターミナルバッファを右のウィンドウに開く。
+command! -nargs=* Tl vsplit | wincmd l |terminal <args>
+
+" NOTE: Neovim ターミナルバッファのカスタマイズ
+augroup neovim_terminal
+    autocmd!
+
+    " NOTE: ターミナルバッファを起動した際、デフォルトで INSERT モードにしておく。
+    autocmd TermOpen * startinsert
+
+    " NOTE: ターミナルバッファに行番号を表示しない。
+    autocmd TermOpen * :set nonumber norelativenumber
+
+    " NOTE: ターミナルバッファで <C-c> による中断を使えるようにする。
+    autocmd TermOpen * nnoremap <buffer> <C-c> i<C-c>
+
+    " NOTE: <Esc> で TERMINAL モードから脱出できるようにする。
+    :tnoremap <Esc> <C-\><C-n>
+augroup END
+
 " NOTE: EasyMotion で移動する際、日本語をローマ字で検索出来るようにする。
 let g:EasyMotion_use_migemo = 1
 
