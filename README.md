@@ -7,8 +7,7 @@
 
 1. `cd このリポジトリのルートディレクトリ`
 2. `sh main.sh`
-3. Neovim を起動して `:PlugInstall` を実行
-4. [Nerd Font Download Page](https://www.nerdfonts.com/font-downloads) から JetBrains Mono の Nerd Font 版をダウンロード・インストール
+3. [Nerd Font Download Page](https://www.nerdfonts.com/font-downloads) から JetBrains Mono の Nerd Font 版をダウンロード・インストール
 
 ## 備考
 
