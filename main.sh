@@ -11,6 +11,7 @@ mkdir ~/.config
 mkdir ~/.config/alacritty
 cp alacritty.yml ~/.config/alacritty/alacritty.yml
 
+# coc.nvim設定ファイルの追加
 mkdir ~/.vim
 cp coc-settings.json ~/.vim/coc-settings.json
 
@@ -32,15 +33,19 @@ cp .ideavimrc ~/.ideavimrc
 mkdir -p ~/.config/nvim
 ln -s ~/.vimrc ~/.config/nvim/init.vim
 
-# vim-plugのインストール
-sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
-       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
-
 # Homebrew及びそのパッケージのインストール
 cp .Brewfile ~/.Brewfile
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew update
 brew bundle --global
+
+# vim-plugのインストール
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+
+# vim-plugプラグインのインストール
+vim + 'PlugInstall --sync' +q
+nvim + 'PlugInstall --sync' +q
 
 # kiexのインストール
 \curl -sSL https://raw.githubusercontent.com/taylor/kiex/master/install | bash -s
