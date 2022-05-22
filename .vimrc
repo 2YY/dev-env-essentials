@@ -11,6 +11,7 @@ Plug 'inkarkat/vim-ReplaceWithRegister'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'kana/vim-textobj-entire'
 Plug 'kana/vim-textobj-user'
+Plug 'kyazdani42/nvim-web-devicons'
 Plug 'lambdalisue/fern.vim'
 Plug 'lambdalisue/fern-git-status.vim'
 Plug 'lambdalisue/fern-hijack.vim'
@@ -19,9 +20,9 @@ Plug 'lambdalisue/nerdfont.vim'
 Plug 'machakann/vim-highlightedyank'
 Plug 'mattn/emmet-vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'nvim-lualine/lualine.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'prettier/vim-prettier'
-Plug 'ryanoasis/vim-devicons'
 Plug 'tommcdo/vim-exchange'
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-commentary'
@@ -191,16 +192,29 @@ function! s:init_fern() abort
   setlocal nonumber
 endfunction
 
+" NOTE: lualine 初期化
+lua << END
+  require('lualine').setup {
+    options = {
+      component_separators = '',
+      section_separators = ''
+    },
+    sections = {
+      lualine_a = {},
+      lualine_b = {'diff', 'diagnostics'},
+      lualine_c = {'filename'},
+      lualine_x = {'filetype', 'location', 'fileformat', 'encoding', 'branch'},
+      lualine_y = {},
+      lualine_z = {}
+    }
+  }
+END
+
 " NOTE: Fern バッファの初期化時に init_fern 関数が実行されるようにする。
 augroup fern-custom
   autocmd! *
   autocmd FileType fern call s:init_fern()
 augroup END
-
-" NOTE: fzf-preview にアイコンを表示する。
-let g:fzf_preview_use_dev_icons = 1
-let g:fzf_preview_dev_icon_prefix_string_length = 3
-let g:fzf_preview_dev_icons_limit = 5000
 
 " NOTE: coc.nvim プラグインのインストール
 let g:coc_global_extensions = [
