@@ -81,7 +81,7 @@ let g:fern#renderer = 'nerdfont'
 " NOTE: Fern のデフォルトキーバインディングを無効化する。
 let g:fern#disable_default_mappings = 1
 
-" NOTE: Fern バッファのカスタマイズ
+" Fern バッファのカスタマイズ
 function! s:init_fern() abort
   " NOTE: Fern のキーバインディングを設定する。(s1 で開閉出来なくなるので s を空けている以外はデフォルトのまま)
   noremap <buffer> <C-C>                              <Plug>(fern-action-cancel)
@@ -172,6 +172,19 @@ augroup END
 let g:fzf_preview_use_dev_icons = 1
 let g:fzf_preview_dev_icon_prefix_string_length = 3
 let g:fzf_preview_dev_icons_limit = 5000
+
+" NOTE: coc.nvim プラグインのインストール
+let g:coc_global_extensions = [
+      \'coc-clangd',
+      \'coc-css',
+      \'coc-elixir',
+      \'coc-eslint',
+      \'coc-fzf-preview',
+      \'coc-html',
+      \'coc-json',
+      \'coc-prettier',
+      \'coc-tsserver'
+\]
 
 " NOTE: リーダーキーをスペースキーにする。
 let mapleader = "\<space>"
