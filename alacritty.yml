@@ -6,7 +6,7 @@ font:
     style: Bold
   italic:
     family: JetBrainsMonoMedium Nerd Font
-    style: Bold
+    style: Italic
   size: 14
   offset:
     x: 0
